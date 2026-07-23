@@ -1,6 +1,0 @@
-PayFi Agent 交易凭证
-时间: 2026-07-21T15:28:16.106Z
-内容: Anti-MEV Payment Channels
-金额: 5 USDC
-收款: 0x4CA732A3663e22cA0024ACaA77051813Eef4821c
-交易: 0xac075fd1249bdd967902e64abca5953e51dcefbc56187b1ec6a39ab08e527a6e

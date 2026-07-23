@@ -1,3 +1,5 @@
 node_modules/
-.payfi-data/store.json
+.payfi-data/
+downloads/
+output/
 .env
