@@ -1,7 +1,5 @@
 # 💰 PayFi Agent — AI Stablecoin Payment Assistant
 
-> Monad Buidler Camp · Week 2 Prototype · Tech Track
-
 An AI Agent on Monad Testnet that understands natural language and executes on-chain USDC payments — buy papers, purchase data, pay for services, all with a single command.
 
 [📖 简体中文文档 →](README_CN.md)
