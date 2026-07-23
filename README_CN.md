@@ -1,7 +1,5 @@
 # 💰 PayFi Agent — AI 稳定币支付助手
 
-> Monad Buidler Camp · Week 2 原型 · Tech（研发）方向
-
 基于 Monad Testnet 的 AI Agent，听懂白话指令，自动完成 USDC 链上支付。
 
 [📖 English Docs →](README.md)
