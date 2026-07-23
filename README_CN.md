@@ -4,6 +4,8 @@
 
 基于 Monad Testnet 的 AI Agent，听懂白话指令，自动完成 USDC 链上支付。
 
+[📖 English Docs →](README.md)
+
 ---
 
 ## 技术栈
