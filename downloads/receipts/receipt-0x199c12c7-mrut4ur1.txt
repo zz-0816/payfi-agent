@@ -1,0 +1,6 @@
+PayFi Agent 交易凭证
+时间: 2026-07-21T15:27:33.805Z
+内容: zk-SNARK Payment Privacy
+金额: 5 USDC
+收款: 0x4CA732A3663e22cA0024ACaA77051813Eef4821c
+交易: 0x199c12c7185f3fc3fe8f656c5bb7681a87aed4c1bb917dc7d6e9fef791c324c0

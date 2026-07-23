@@ -1,0 +1,19 @@
+{
+  "name": "payfi-agent",
+  "version": "0.2.0",
+  "description": "AI Agent for stablecoin payments — stateless security engine + on-chain truth verification. Monad Testnet.",
+  "type": "module",
+  "scripts": {
+    "demo": "tsx src/agent.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "viem": "^2.54.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "~5.9.0",
+    "vitest": "^3.2.6"
+  }
+}

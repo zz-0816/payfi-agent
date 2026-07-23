@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Achieving Payment Privacy via zk-SNARKs on EVM-Compatible Chains",
+    "txHash": "0x199c12c7185f3fc3fe8f656c5bb7681a87aed4c1bb917dc7d6e9fef791c324c0",
+    "content": "【论文 3/4 — zk-SNARK Payment Privacy】\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n标题: Achieving Payment Privacy via zk-SNARKs on EVM-Compatible Chains\n作者: Nakamoto, R., & Vitalis, A. (2025)\n期刊: Proceedings on Privacy Enhancing Technologies (PoPETs), Vol.2025(1)\nDOI:  10.2478/popets-2025-zkp001\n\n摘要:\n提出 ZK-Pay —— 一个基于 zk-SNARK 的链上隐私支付协议。\n发送方在链下生成零知识证明，证明其拥有足够余额且未双花，\n链上合约仅验证 proof 而不暴露金额、发送方或接收方地址。\n在 Monad Testnet 上部署的 ZK-Pay 合约，单笔验证 Gas 仅 230K，\n证明生成时间 < 2 秒（浏览器环境）。\n\n技术栈:\n- Groth16 证明系统\n- Circom 2.0 电路编译器\n- Solidity 0.8.20 链上验证器\n- Monad Testnet 部署 (Chain ID 10143)\n\n性能指标:\n• 证明生成: 1.8s (浏览器 Wasm)\n• 链上验证 Gas: 230,000\n• 隐私集大小: 2^16 = 65,536\n• 吞吐量: ~50 tx/s\n\n引用: Nakamoto, R., & Vitalis, A. (2025). \"ZK-Pay Privacy.\" PoPETs, 2025(1).\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+    "keywords": [
+      "zk-SNARK",
+      "Privacy",
+      "Zero-knowledge",
+      "Monad",
+      "Groth16",
+      "Circom"
+    ]
+  },
+  {
+    "title": "Anti-MEV Payment Channels: Protecting User Transactions from Front-running",
+    "txHash": "0xac075fd1249bdd967902e64abca5953e51dcefbc56187b1ec6a39ab08e527a6e",
+    "content": "【论文 1/4 — Anti-MEV Payment Channels】\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n标题: Anti-MEV Payment Channels: Protecting User Transactions from Front-running\n作者: Zhang et al. (2024)\n期刊: IEEE Transactions on Blockchain, Vol.5(3), pp.112-128\nDOI:  10.1109/TBC.2024.mEv001\n\n摘要:\n本文提出一种抗 MEV（矿工可提取价值）的支付通道架构。\n通过在 Layer 2 状态通道中引入时间锁定 + 批量结算机制，\n有效防止抢跑（front-running）和三明治攻击（sandwich attack）。\n实验结果表明，Anti-MEV 通道在 Uniswap V3 测试环境中将\nMEV 损失降低了 87.3%，同时保持与传统支付通道相当的吞吐量。\n\n关键发现:\n1. 时间锁定窗口 ≥ 2 blocks 可防止 99% 的抢跑攻击\n2. 批量结算将 Gas 成本分摊，单笔成本从 $12 → $0.34\n3. 与现有 ERC-4337 账户抽象标准兼容\n\n引用: Zhang, L., Chen, W., & Park, S. (2024).\n\"Anti-MEV Payment Channels.\" IEEE TBC, 5(3), 112-128.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+    "keywords": [
+      "MEV",
+      "Payment Channel",
+      "Layer 2",
+      "Front-running",
+      "ERC-4337"
+    ]
+  },
+  {
+    "title": "Stablecoin-Based Cross-Border Settlement: Latency, Cost, and Regulatory Implications",
+    "txHash": "0x9eae4627fa84fb99a1a586ce8795c0a401b747d6ec439a5406c4b8141d25c066",
+    "content": "【论文 2/4 — Stablecoin Cross-border Settlement】\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n标题: Stablecoin-Based Cross-Border Settlement: Latency, Cost & Regulatory Implications\n作者: Müller, K., & Okafor, C. (2024)\n期刊: Journal of Digital Finance, Vol.12(2), pp.45-67\nDOI:  10.2139/jdf.2024.stable001\n\n摘要:\n本研究对比了 USDC、USDT 和传统 SWIFT 在跨境支付场景中的\n延迟、成本和合规性。基于 50,000 笔真实交易数据分析，\n链上稳定币结算平均延迟 13.2 秒，费用 $0.02，\n而 SWIFT 对应数据为 2.3 天和 $25-45。\n同时讨论了 FATF 旅行规则对链上稳定币支付的影响。\n\n关键数据:\n┌──────────┬─────────┬──────────┬───────────┐\n│ 方式     │ 延迟    │ 费用     │ 成功率    │\n├──────────┼─────────┼──────────┼───────────┤\n│ SWIFT    │ 2.3 天  │ $25-45   │ 98.7%     │\n│ USDC     │ 13.2 秒 │ $0.02    │ 99.8%     │\n│ USDT     │ 15.1 秒 │ $0.03    │ 99.6%     │\n│ XRP      │ 4.1 秒  │ $0.0004  │ 99.9%     │\n└──────────┴─────────┴──────────┴───────────┘\n\n引用: Müller, K., & Okafor, C. (2024). \"Stablecoin Cross-Border.\" JDF, 12(2), 45-67.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+    "keywords": [
+      "Stablecoin",
+      "Cross-border",
+      "SWIFT",
+      "USDC",
+      "Regulation",
+      "FATF"
+    ]
+  }
+]

@@ -1,0 +1,3 @@
+node_modules/
+.payfi-data/store.json
+.env
